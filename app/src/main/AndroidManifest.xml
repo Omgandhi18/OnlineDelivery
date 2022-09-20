@@ -16,6 +16,9 @@
         android:theme="@style/Theme.OnlineDelivery"
         tools:targetApi="31">
         <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomePage"
             android:exported="false" />
         <activity

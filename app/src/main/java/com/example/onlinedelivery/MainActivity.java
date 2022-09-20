@@ -79,6 +79,12 @@ GoogleSignInClient mGoogleSignInClient;
     protected void onStart() {
         super.onStart();
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
+        if(account!=null){
+            Intent intent=new Intent(this,HomePage.class);
+            startActivity(intent);
+
+        }
+
 //        updateUI(account);
     }
 }
