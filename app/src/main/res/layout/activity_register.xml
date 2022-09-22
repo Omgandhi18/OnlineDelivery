@@ -5,9 +5,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegisterActivity">
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"></Button>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="254dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="72dp"
+        android:gravity="center"
+        android:text="Register Your Self!"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"></TextView>
+
+    <EditText
+        android:id="@+id/regfna"
+        android:layout_width="254dp"
+        android:layout_height="60dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:hint="Enter Name :"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="30px"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <EditText
+        android:id="@+id/regfema"
+        android:layout_width="254dp"
+        android:layout_height="60dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:hint="Enter Email :"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="30px"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="251dp" />
+
+    <EditText
+        android:id="@+id/regfcon"
+        android:layout_width="254dp"
+        android:layout_height="60dp"
+        android:hint="Enter Contact :"
+        android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="30px"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="323dp" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
