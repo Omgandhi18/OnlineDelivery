@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/91977/AndroidStudioProjects/OnlineDelivery1/app/src/main/res/drawable-v24/ic_baseline_email_24.xml" value="0.1555" />
+        <entry key="..\:/Users/91977/AndroidStudioProjects/OnlineDelivery1/app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.1555" />
+        <entry key="..\:/Users/91977/AndroidStudioProjects/OnlineDelivery1/app/src/main/res/drawable/ic_baseline_local_phone_24.xml" value="0.1555" />
+        <entry key="..\:/Users/91977/AndroidStudioProjects/OnlineDelivery1/app/src/main/res/layout/activity_main.xml" value="0.21197916666666666" />
         <entry key="..\:/Users/91977/AndroidStudioProjects/OnlineDelivery1/app/src/main/res/layout/activity_register.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/devil/AndroidStudioProjects/OnlineDelivery/app/src/main/res/drawable-v24/ic_baseline_lock_24.xml" value="0.1" />
         <entry key="..\:/Users/devil/AndroidStudioProjects/OnlineDelivery/app/src/main/res/layout/activity_home_page.xml" value="0.27447916666666666" />
