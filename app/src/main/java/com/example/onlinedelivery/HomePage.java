@@ -17,6 +17,9 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.squareup.picasso.Picasso;
 
 public class HomePage extends AppCompatActivity {
@@ -26,6 +29,8 @@ public class HomePage extends AppCompatActivity {
     GoogleSignInClient mGoogleSignInClient;
     String personName, personGivenName, personFamilyName, personEmail, personId;
     Uri personPhoto;
+    FirebaseAuth mAuth;
+    FirebaseFirestore db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +40,14 @@ public class HomePage extends AppCompatActivity {
         name=(TextView)findViewById(R.id.name);
         email=(TextView)findViewById(R.id.email);
         img=(ImageView)findViewById(R.id.img);
+        mAuth=FirebaseAuth.getInstance();
 
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
+        FirebaseUser user=mAuth.getCurrentUser();
+        if(user!=null){
+            personName=user.getUid();
+            personEmail= user.getEmail();
+        }
         if (acct != null) {
             personName = acct.getDisplayName();
             personGivenName = acct.getGivenName();
@@ -67,6 +78,7 @@ public class HomePage extends AppCompatActivity {
             email.setText("Please Sign in");
         }
 
+
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
@@ -75,6 +87,7 @@ public class HomePage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 signOut();
+                FirebaseAuth.getInstance().signOut();
             }
         });
     }
