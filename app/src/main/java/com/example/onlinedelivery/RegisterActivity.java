@@ -87,7 +87,14 @@ public class RegisterActivity extends Activity {
                         });
             }
         });
-
+        btCan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(RegisterActivity.this,MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
 
         //it will create new node name "student" in real time database.

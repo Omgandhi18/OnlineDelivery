@@ -39,7 +39,7 @@
             android:layout_gravity="center"
             android:gravity="center"
 
-            android:textColor="#284b63"
+            android:textColor="@color/text_color"
             android:textSize="50dp"
             android:fontFamily="@font/bebasneueregular"
             android:textStyle="bold"></TextView>
@@ -52,7 +52,7 @@
             android:layout_margin="10dp"
             android:fontFamily="@font/bebasneueregular"
             android:gravity="center"
-            android:textColor="#284b63"
+            android:textColor="@color/text_color"
 
             android:textSize="20dp"
             android:textStyle="bold"></TextView>
@@ -64,7 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:backgroundTint="#3c6e71"
+        android:backgroundTint="@color/button_background"
         android:drawableLeft="@drawable/ic_baseline_settings_24"
         android:text="Settings"
         android:gravity="start|center"
@@ -85,7 +85,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:backgroundTint="#3c6e71"
+        android:backgroundTint="@color/button_background"
         android:drawableLeft="@drawable/ic_baseline_location_on_24"
         android:drawableTint="@color/white"
         android:fontFamily="@font/bebasneueregular"
@@ -107,7 +107,7 @@
         android:id="@+id/logout"
         android:layout_width="170dp"
         android:layout_height="61dp"
-        android:backgroundTint="#3c6e71"
+        android:backgroundTint="@color/button_background"
         android:text="Log out"
         android:fontFamily="@font/bebasneueregular"
         android:textSize="30dp"

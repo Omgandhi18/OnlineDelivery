@@ -73,7 +73,7 @@ public class MainActivity extends Activity {
                                     // Sign in success, update UI with the signed-in user's information
                                     Log.d(TAG, "signInWithEmail:success");
                                     FirebaseUser user = mAuth.getCurrentUser();
-                                    Intent intent=new Intent(MainActivity.this,HomePage.class);
+                                    Intent intent=new Intent(MainActivity.this,OrderActivity.class);
                                     startActivity(intent);
 //                                    updateUI(user);
                                 } else {
@@ -92,6 +92,7 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -119,7 +120,7 @@ public class MainActivity extends Activity {
         try {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
             Toast.makeText(this, "" + account.getEmail(), Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(this, HomePage.class);
+            Intent intent = new Intent(this, OrderActivity.class);
             startActivity(intent);
 
             // Signed in successfully, show authenticated UI.
@@ -137,12 +138,18 @@ public class MainActivity extends Activity {
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if (account != null) {
-            Intent intent = new Intent(this, HomePage.class);
+            Intent intent = new Intent(this, OrderActivity.class);
             startActivity(intent);
         }
         if (currentUser != null) {
-            Intent intent = new Intent(this, HomePage.class);
+            Intent intent = new Intent(this, OrderActivity.class);
             startActivity(intent);
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
     }
 }
