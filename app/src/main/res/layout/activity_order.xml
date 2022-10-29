@@ -8,21 +8,219 @@
     tools:context=".OrderActivity">
 
     <TextView
+        android:id="@+id/loc"
         android:layout_width="wrap_content"
         android:layout_height="70dp"
-        android:drawableLeft="@drawable/ic_baseline_location_on_24"
-        android:drawableTint="@color/button_background"
         android:fontFamily="@font/bebasneueregular"
-        android:padding="10dp"
         android:gravity="center"
-        android:text="location"
-        android:textSize="40dp"
-        android:id="@+id/loc"
+        android:padding="10dp"
+        android:text="@string/location"
         android:textColor="@color/text_color"
+        android:textSize="40sp"
+        app:drawableLeftCompat="@drawable/ic_baseline_location_on_24"
+        app:drawableTint="@color/button_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.011"></TextView>
+        app:layout_constraintVertical_bias="0.009" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/beverages"
+        android:layout_width="270sp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_background"
+        app:cardCornerRadius="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.137">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/beverages"
+            android:drawablePadding="10sp"
+            android:fontFamily="@font/bebasneueregular"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="Beverages"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/canned"
+        android:layout_width="270sp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_background"
+        app:cardCornerRadius="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bread"
+        app:layout_constraintVertical_bias="0.103">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/canned_food"
+            android:drawablePadding="10sp"
+            android:fontFamily="@font/bebasneueregular"
+            android:padding="10sp"
+            android:gravity="center"
+            android:text="Canned Food"
+            android:textColor="@color/white"
+            android:textSize="43sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bread"
+        android:layout_width="270sp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_background"
+        app:cardCornerRadius="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beverages"
+
+        app:layout_constraintVertical_bias="0.051">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/bread"
+            android:drawablePadding="10sp"
+            android:fontFamily="@font/bebasneueregular"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="Bread"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/milk"
+        android:layout_width="270sp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_background"
+        app:cardCornerRadius="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/canned"
+
+        app:layout_constraintVertical_bias="0.125">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/milk"
+            android:drawablePadding="10sp"
+            android:fontFamily="@font/bebasneueregular"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="Dairy"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/wheat"
+        android:layout_width="270sp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_background"
+        app:cardCornerRadius="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/milk"
+
+        app:layout_constraintVertical_bias="0.181">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/wheat"
+            android:drawablePadding="10sp"
+            android:fontFamily="@font/bebasneueregular"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="Dry Goods"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/frozen"
+        android:layout_width="270sp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_background"
+        app:cardCornerRadius="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wheat"
+
+        app:layout_constraintVertical_bias="0.489">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/frozen"
+            android:drawablePadding="10sp"
+            android:fontFamily="@font/bebasneueregular"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="Frozen"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

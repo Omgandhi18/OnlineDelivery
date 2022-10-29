@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">OnlineDelivery</string>
     <string name="web_client_id">1072150906939-qvbfq6a1s2r3uae6016b4fjadp3gadnn.apps.googleusercontent.com</string>
+    <string name="location">location</string>
 </resources>
