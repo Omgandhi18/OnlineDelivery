@@ -26,6 +26,23 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.009" />
 
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
+        android:layout_gravity="center"
+        android:src="@drawable/avatar"
+        app:civ_border_color="#3c6e71"
+        app:civ_border_width="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toEndOf="@+id/loc"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/beverages"
         android:layout_width="270sp"
@@ -83,7 +100,7 @@
             android:gravity="center"
             android:text="Canned Food"
             android:textColor="@color/white"
-            android:textSize="43sp"
+            android:textSize="40sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

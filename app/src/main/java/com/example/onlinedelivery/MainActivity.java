@@ -150,6 +150,7 @@ public class MainActivity extends Activity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+        Toast.makeText(this, "Press back once more to exit", Toast.LENGTH_SHORT).show();
         finish();
     }
 }
